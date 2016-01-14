@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+<listener>
+<listener-class>servletlistener</listener-class></listener>
+<listener>
+	<listener-class>bean.MySessionListener</listener-class>
+</listener>
+  <servlet-mapping>
+    <servlet-name>signin</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>signin</servlet-name>
+    <servlet-class>signin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userlogout</servlet-name>
+    <url-pattern>/userlogout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userlogout</servlet-name>
+    <servlet-class>userlogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addstockdb</servlet-name>
+    <url-pattern>/addstockdb</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>addstockdb</servlet-name>
+    <servlet-class>addstockdb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminlogout</servlet-name>
+    <url-pattern>/adminlogout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>adminlogout</servlet-name>
+    <servlet-class>adminlogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateuser</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>updateuser</servlet-name>
+    <servlet-class>updateuser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>buy</servlet-name>
+    <url-pattern>/buy</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>buy</servlet-name>
+    <servlet-class>buy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sell</servlet-name>
+    <url-pattern>/sell</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>sell</servlet-name>
+    <servlet-class>sell</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>sendfeed</servlet-name>
+    <url-pattern>/sendfeed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>sendfeed</servlet-name>
+    <servlet-class>sendfeed</servlet-class>
+  </servlet>
+ <error-page>
+    <error-code>404</error-code>
+    <location>/Error404.jsp</location>
+</error-page> 
+ 
+</web-app>
